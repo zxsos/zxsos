@@ -1,8 +1,9 @@
-## Hi I’m zxsos👋 a student in china
-<!--
-Here are some ideas to get you started:
+## Hi I’m zxsos👋 a student
 🔭 I’m currently working on Java
 🌱 I’m currently learning Rust
+<!--
+Here are some ideas to get you started:
+
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
 - 💬 Ask me about ...
