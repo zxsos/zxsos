@@ -1,5 +1,5 @@
 ## Hi I’m zxsos👋  
-a student
+A student
 
 <!--
 Here are some ideas to get you started:
