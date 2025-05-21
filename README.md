@@ -14,8 +14,8 @@ Here are some ideas to get you started:
 -->
 
 <div style="display: flex; gap: 15px; align-items: center;">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zxsos&layout=donut&show_icons=true&bg_color=00000000" width="45%" alt="Languages" >
-<img src="share/hacker_a.gif" width="45%" alt="coding" > 
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zxsos&layout=donut&show_icons=true&bg_color=00000000" width="40%" alt="Languages" >
+
 </div>
 <img src="share/line.gif" height="20" width="100%" alt="line">  
 <picture>  
