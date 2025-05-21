@@ -1,6 +1,6 @@
-## Hi I’m zxsos👋  
-A student
-
+## Hi there 👋 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=I+am+a+college+student;I+love+open+source;I+love+to+code)](https://git.io/typing-svg)
+![metrics](./github-metrics.svg)
 <!--
 Here are some ideas to get you started:
 🔭 I’m currently working on Java  
