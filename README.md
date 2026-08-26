@@ -17,17 +17,3 @@
 </div>
 <img src="share/line.gif" height="20" width="100%" alt="line">  
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zxsos&layout=donut&show_icons=true&bg_color=00000000" width="340px" alt="Languages" />
-    </td>
-    <td>
-      <picture>
-        <source srcset="https://github-readme-stats.vercel.app/api?username=zxsos&show_icons=true&theme=dark" media="(prefers-color-scheme: dark)" />
-        <source srcset="https://github-readme-stats.vercel.app/api?username=zxsos&show_icons=true" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-        <img src="https://github-readme-stats.vercel.app/api?username=zxsos&show_icons=true" width="500px" alt="Stats" />
-      </picture>
-    </td>
-  </tr>
-</table>
