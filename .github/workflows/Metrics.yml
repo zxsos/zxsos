@@ -9,9 +9,49 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     permissions:
       contents: write
+      issues: write
     steps:
-      - uses: lowlighter/metrics@latest
+      # 钉死版本：@latest 会被上游更新打断，v3.34 为当前实际解析到的版本
+      - uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+
+      # 失败提醒：首次失败开 Issue，之后失败在同一 Issue 下追加评论
+      - name: Notify on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = '[Metrics] 工作流运行失败'
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+            const body = [
+              `Metrics 工作流运行失败：<${runUrl}>`,
+              '',
+              '最常见原因是 `secrets.METRICS_TOKEN` 过期或被吊销（日志中会出现 `Bad credentials`）。',
+              '处理方式：Settings → Secrets and variables → Actions → 更新 `METRICS_TOKEN`。',
+            ].join('\n')
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100,
+            })
+            const existing = issues.find(i => i.title === title)
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body,
+              })
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+              })
+            }
