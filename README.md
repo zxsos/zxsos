@@ -1,7 +1,5 @@
-## Hi there 👋 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=I+am+a+college+student;I+love+open+source;I+love+to+code" alt="Typing SVG">
-</a>
+## Hi  👋 
+
 <img src="./github-metrics.svg" alt="metrics">
 <img src="share/line.gif" height="20" width="100%" alt="line">  
 <picture>  
