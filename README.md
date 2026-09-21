@@ -1,6 +1,5 @@
 ## Hi  👋 
 
-<img src="./github-metrics.svg" alt="metrics">
 <img src="share/line.gif" height="20" width="100%" alt="line">  
 <picture>  
     <source media="(prefers-color-scheme: dark)"  
